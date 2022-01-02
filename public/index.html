@@ -20,6 +20,149 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
     rel="stylesheet">
 
+  <style>
+    /* Desktop*/
+    @media only screen and (min-width: 960px) {
+
+      .container {
+        width: 960px
+      }
+
+      .header-left {
+        padding: 38px 50px 70px !important
+      }
+
+      .lets-you-row {
+        padding: 0 50px;
+      }
+
+      .advance-table {
+        padding: 15px 50px 70px !important; 
+        background: white;
+      }
+
+      .one-solution-table {
+text-align: center;
+     }
+
+      .one-solution-table img{
+max-width: 611px;
+     }
+
+     .join-together-table .left-column{
+       padding: 20 50px !important ;
+     }
+     .join-together-table .mid-column{
+       padding: 20 50px !important ;
+     }
+
+     .join-together-table .right-column{
+       padding: 20 50px !important ;
+     }
+
+     .detail-table {
+      padding: 50px 50px 25px !important ;
+     }
+
+
+    }
+
+    /* Mid Size*/
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px;
+      }
+
+
+    }
+
+    /* Mobile*/
+    @media only screen and (max-width: 600px) {
+
+      .container {
+        width: 100%;
+      }
+
+      .header-left {
+        width: 100%;
+      }
+
+
+
+      .header-right {
+        width: 100%;
+      }
+
+      .advance-table .image_head {
+        width: 100%;
+
+      }
+
+      .advance-table .left-column {
+        width: 100%;
+
+      }
+
+      .advance-table .left-column .appstore {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+      }
+
+      .advance-table .right-column {
+        width: 100%;
+        
+
+      }
+
+
+      .advance-table .right-column .playstore {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+      }
+
+      .lets-you-row .left-column {
+
+        width: 50%;
+      }
+
+      .lets-you-row .mid-column {
+
+        width: 50%;
+      }
+
+      .lets-you-row .right-column {
+
+        width: 100%;
+      }
+
+      .join-together-table .left-column{
+        width: 100%;
+       padding: 20 50px !important ;
+     }
+     .join-together-table .mid-column{
+      width: 100%;
+       padding: 20 50px !important ;
+     }
+
+     .join-together-table .right-column{
+       width: 100%;
+       padding: 20 50px !important ;
+     }
+
+     .detail-table .one-row-table .left-column {
+       width: 100%;
+     }
+     .detail-table .one-row-table .right-column {
+       width: 100%;
+     }
+
+    }
+  </style>
+
 </head>
 
 <body style="background: black;">
@@ -63,7 +206,7 @@
                 <tr>
                   <td style="font-family: 'Open Sans','Helvetica Neue', 'Helvetica','Lucida Grande', sans-serif; color: #7d7d7d; 
                   ">
-                    <table class="container" width=100% align="center" cellspacing="0" cellpadding="0" border="0"
+                    <table class="menu-table" width=100% align="center" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 20px">
 
                       <tr>
@@ -248,7 +391,7 @@
                   <td
                     style="font-family: 'Open Sans','Helvetica Neue', 'Helvetica','Lucida Grande', sans-serif; color: #333333; font-weight: 300;  font-size: 24px; text-decoration: none; padding: 36px 0 16px ; text-transform: uppercase;"
                     align="center">
-                    <img src="./img/image_head.jpg" alt="image head" />
+                    <img src="./img/image_head.jpg" alt="image head" class="image_head" />
                   </td>
                 </tr>
                 <tr>
@@ -275,14 +418,14 @@
 
                       <tr>
                         <td align="right">
-                          <img src="./img/appstore.png" alt="apple-logo">
+                          <img src="./img/appstore.png" alt="apple-logo" class="appstore"/>
 
                         </td>
                       </tr>
                     </table>
 
                     <table class="right-column" width=50% align="left" cellspacing="0" cellpadding="0" border="0"
-                      style=" padding: 15px 15px 70px 15px; background: white; ">
+                      style=" padding: 15px 15px 30px 15px; background: white; ">
 
                       <tr>
                         <td>
@@ -294,7 +437,7 @@
 
                       <tr>
                         <td align="left">
-                          <img src="./img/playstore.png" alt="playstore-logo">
+                          <img src="./img/playstore.png" alt="playstore-logo" class="playstore">
 
                         </td>
                       </tr>
@@ -315,7 +458,7 @@
 
           <tr>
             <td>
-              <img src="./img/one_app.jpg" alt="one-app-image" style="width: 100%;" />
+              <img src="./img/one_app.jpg" alt="one-app-image" style="width: 100%;" class="one-app" />
             </td>
           </tr>
         </table>
@@ -789,25 +932,36 @@
           </tr>
           <tr>
             <td>
-              <table class="icon-table" width=250px align="center" align="left" cellspacing="0" cellpadding="0" border="0">
+              <table class="icon-table" width=250px align="center" align="left" cellspacing="0" cellpadding="0"
+                border="0">
                 <tr>
                   <td align="center">
-                    <img src="./img/twitter_icon.png" alt="twitter" />
+                   <a href="http://www.twitter.com" target="_blank"><img src="./img/twitter_icon.png" alt="twitter" /></a>
                   </td>
                   <td align="center">
+                    <a href="http://www.facebook.com" target="_blank"> 
                     <img src="./img/facebook_icon.png" alt="twitter" />
+                  </a>
                   </td>
                   <td align="center">
+                    <a href="http://www.google.com" target="_blank"> 
                     <img src="./img/google_icon.png" alt="twitter" />
+                    </a>
                   </td>
                   <td align="center">
+                    <a href="http://www.pinterest.com" target="_blank"> 
                     <img src="./img/pinterest_icon.png" alt="twitter" />
+                    </a>
                   </td>
                   <td align="center">
+                    <a href="http://www.linkedin.com" target="_blank">  
                     <img src="./img/linkedin_icon.png" alt="twitter" />
+                    </a>
                   </td>
                   <td align="center">
+                    <a href="http://www.youtube.com" target="_blank"> 
                     <img src="./img/youtube_icon.png" alt="twitter" />
+                    </a>
                   </td>
                 </tr>
               </table>
